@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChileComex - Evaluación de Desempeño</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #d97706;
+            --accent: #dc2626;
+            --bg-light: #f3f4f6;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+            color: #333;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .logo-text span {
+            color: var(--secondary);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: var(--secondary);
+        }
+
+        /* Banner Hero */
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            border-bottom: 5px solid var(--secondary);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Contenido Principal */
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+
+        /* Secciones y Tarjetas */
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            margin-bottom: 1.5rem;
+        }
+
+        .card h2 {
+            color: var(--primary);
+            margin-top: 0;
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 0.5rem;
+        }
+
+        /* Pasos de Evaluación */
+        .steps {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .step-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background-color: #f8fafc;
+            padding: 1rem;
+            border-left: 5px solid var(--secondary);
+            border-radius: 4px;
+        }
+
+        .step-number {
+            background-color: var(--secondary);
+            color: white;
+            font-weight: bold;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        /* Botón de Acción Principal */
+        .cta-btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background-color: var(--accent);
+            color: white;
+            padding: 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+            transition: background 0.2s;
+        }
+
+        .cta-btn:hover {
+            background-color: #b91c1c;
+        }
+
+        /* Barra Lateral */
+        .badge {
+            background: #fef3c7;
+            color: #92400e;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #0f172a;
+            color: #94a3b8;
+            font-size: 0.9rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <span style="font-size: 2rem;">📦</span>
+            <div class="logo-text">Chile<span>Comex</span></div>
+        </div>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Evaluación</a>
+            <a href="#">Soporte</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>¡El Gran Mapa de Desempeño 2026! 🦅</h1>
+        <p>¡Desbloquea tus logros, conoce tus superpoderes y sigamos despachando metas juntos!</p>
+    </section>
+
+    <div class="container">
+        <main>
+            <div class="card">
+                <h2>Tu Ruta de Evaluación</h2>
+                <p>Completar tu proceso es rápido y sencillo. Sigue estos simples pasos para validar tu gestión anual:</p>
+                
+                <div class="steps">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <div>
+                            <strong>Paso 1: ¡Autocalifícate!</strong>
+                            <p style="margin: 0.2rem 0 0 0; font-size: 0.9rem; color: #666;">
+                                Completa tu autoevaluación en el portal del colaborador antes del plazo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <div>
+                            <strong>Paso 2: Conoce tus Superpoderes</strong>
+                            <p style="margin: 0.2rem 0 0 0; font-size: 0.9rem; color: #666;">
+                                Reúnete con tu jefatura directa para analizar el feedback y fijar los nuevos desafíos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="cta-btn">🚀 ¡EMPEZAR MI EVALUACIÓN AQUÍ!</a>
+            </div>
+        </main>
+
+        <aside>
+            <div class="card">
+                <h2>Fechas Clave <span class="badge">Urgente</span></h2>
+                <ul style="padding-left: 1.2rem; line-height: 1.8;">
+                    <li><strong>Inicio:</strong> 10 de Noviembre</li>
+                    <li><strong>Cierre Autoevaluación:</strong> 24 de Noviembre</li>
+                    <li><strong>Entrevistas:</strong> Diciembre</li>
+                </ul>
+            </div>
+
+            <div class="card" style="background-color: #eff6ff;">
+                <h3 style="color: var(--primary); margin-top:0;">¿Necesitas ayuda?</h3>
+                <p style="font-size: 0.9rem;">Si tienes dudas con tu acceso o el proceso, contacta al equipo de Gestión de Personas.</p>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        AGENCIA DE ADUANAS "ChileComex" © 2026 — Tu Aduana de Confianza.
+    </footer>
+
+</body>
+</html>
